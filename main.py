@@ -11,15 +11,15 @@ def foo(x):
         return foo(x-1) + foo(x - 2)
    
 def longest_run(mylist, key):
-    num = 0 
-    value = []
+    n = 0 
+    v = []
     for x in range(len(mylist)):
         if mylist[x] == key:
-            num +=1
+            n +=1
         else:
-            value.append (num)
-            num = 0 
-    return max(value)
+            v.append (n)
+            n = 0 
+    return max(v)
 
 
 class Result:
@@ -36,7 +36,12 @@ class Result:
     
     
 def longest_run_recursive(mylist, key):
-    ### TODO
+   if mylist[0] == key:
+        num +=1
+        return ((longest_run(mylist[1:], key),max(value))
+    else:
+        value.append(num)
+        return ((longest_run(mylist[1:], key), max(value))
     pass
 
 ## Feel free to add your own tests here.
