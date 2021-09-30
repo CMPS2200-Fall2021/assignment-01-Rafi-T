@@ -41,13 +41,13 @@ $2^{2^n} <= 2(2^n)
 .  
 .  
 $n^{1.01} <= O(\mathrm{log}^2 n
-.  let n be 14.467 and c be 2 
+.  let n be 14.467 and c be 1 
 14.467 ^1.01 <= 1 x {log}^2 (14.467) 
 14.858 <= {log}(14.467) x {log}^(14.467)
 14.858 <= 3.85469387 x 3.85469387
 14.858 <= 14.858
 
-let n be 4.136 and c be 2
+let n be 4.136 and c be 1
 
 4.136  ^1.01 <= 1 x {log}^2 (4.136) 
 4.195 <= {log}(4.136) x {log}^(4.136)
@@ -59,15 +59,16 @@ So there exist an n and a c where n^1.01 will always be larger but there exist a
 .  
 
   - 1d. Is $n^{1.01} \in \Omega(\mathrm{log}^2 n)$?  
+  $n^{1.01} >= \Omega(\mathrm{log}^2 n)
 .  
-let n be 4.136 and c be 2
+let n be 4.136 and c be 1
 
 4.136  ^1.01 >= 1 x {log}^2 (4.136) 
 4.195 >= {log}(4.136) x {log}^(4.136)
 4.195 >= 2.0482 x 2.0482
 4.195 >= 4.195
 .  
-$n^{1.01} >= \Omega(\mathrm{log}^2 n)
+
 .  
 .  
   - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$?  
