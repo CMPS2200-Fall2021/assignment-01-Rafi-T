@@ -12,7 +12,8 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 1. **Asymptotic notation**
 
   - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
-.  2^{n+1} <= (2^n)
+.  
+2^{n+1} <= (2^n)
   make c = 2 and n= anything
   2^{n+1} <= 2(2^n) 
   == 2^{n+1} <= (2^{n+1})
