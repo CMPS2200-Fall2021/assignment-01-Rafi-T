@@ -133,7 +133,7 @@ $$
   - 2b. What does this function do, in your own words?  
 
 .  
-.  
+.  fibanocio
 .  
 .  
 .  
