@@ -73,7 +73,10 @@ let n be 4.136 and c be 1
 .  
   - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$?  
 .  
-.  
+.  let c be 1 and n be 2.205
+$\sqrt{2.205} >= (\mathrm{log}3 x 2.205)^3)
+1.485 >= 1.1407786558^3
+
 .  
 .  
   - 1f. Is $\sqrt{n} \in \Omega((\mathrm{log} n)^3)$?  
@@ -90,8 +93,13 @@ $g(n) \in o(f(n))$ means that for **every** positive constant $c$, there exists 
 
 **Prove** that $o(g(n)) \cap \omega(g(n))$ is the empty set.  
 
+$o(g(n)) == o(n) > g(n)
+\omega(g(n)) == omega(n) < g(n)
+therefore 
 .  
-.  
+.  prove that a number can not be bigger and smaller than a number 
+prove x < y and x > y can not be true 
+this would mean x < y > x meaning x 
 .  
 .  
 .  
