@@ -12,12 +12,12 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 1. **Asymptotic notation**
 
   - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
-.  
-2^{n+1} <= (2^n)
+
+.  2^{n+1} <= (2^n)
   make c = 2 and n= anything
   2^{n+1} <= 2(2^n) 
   == 2^{n+1} <= (2^{n+1})
-  therefore yes as they are the sam. if n = 1 then 
+  therefore yes as they are the same if n = 1 then 
 .  2^{1+1} <= (2^{1+1})
 4 = 4 
 .  
@@ -25,8 +25,16 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 . 
   - 1b. Is $2^{2^n} \in O(2^n)$? Why or why not?     
 .  $2^{2^n} <= O(2^n)$
-  
-.  
+ .  
+$2^{2^n} <= (2^n)
+$2^{2n} <= (2^n)
+let c be 2 and n be 0
+$2^{2n} <= 2(2^n)
+== $2^{2n} <= (2^{n+1})
+ $2^{2 x 0} <= (2^{0+1})
+ = $2^{0} <= (2^{1})
+ 1 <= 2
+ so yes 
 .  
 .  
 .  
