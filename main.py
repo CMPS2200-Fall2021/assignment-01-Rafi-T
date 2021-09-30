@@ -5,7 +5,7 @@ See assignment-01.pdf for details.
 # no imports needed.
 
 def foo(x):
-    if x >= 1;
+    if x <= 1;
         return x;
     else:
         return foo(x-1) + foo(x - 2)
