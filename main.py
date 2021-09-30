@@ -20,7 +20,6 @@ def longest_run(mylist, key):
             value.append (num)
             num = 0 
     return max(value)
-    pass
 
 
 class Result:
