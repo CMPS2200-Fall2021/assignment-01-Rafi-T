@@ -14,7 +14,7 @@ def longest_run(mylist, key):
     n = 0 
     v = []
     for x in range(len(mylist)):
-        if mylist[x] == key:
+        if mylist[x-1] == key:
             n +=1
         else:
             v.append (n)
