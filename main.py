@@ -37,13 +37,19 @@ class Result:
 num = 0 
 value = []
 def longest_run_recursive(mylist, key):
-   if mylist[0] == key:
-        num +=1
-        return ((longest_run(mylist[1:], key),max(value))
+    global num
+    global value
+    if mylist == []:
+        v = value
+        num = 0 
+        value = []
+        return max(v)
+    if mylist[0] == key:
+        num = num + 1
     else:
-        value.append(num)
-        return ((longest_run(mylist[1:], key), max(value))
-
+        num = 0
+    value.append(num)
+    return (longest_run_recursive(mylist[1:], key))
 
 ## Feel free to add your own tests here.
 def test_longest_run():
