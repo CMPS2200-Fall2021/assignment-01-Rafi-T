@@ -34,7 +34,8 @@ class Result:
         return('longest_size=%d left_size=%d right_size=%d is_entire_range=%s' %
               (self.longest_size, self.left_size, self.right_size, self.is_entire_range))
     
-    
+num = 0 
+value = []
 def longest_run_recursive(mylist, key):
    if mylist[0] == key:
         num +=1
@@ -42,7 +43,7 @@ def longest_run_recursive(mylist, key):
     else:
         value.append(num)
         return ((longest_run(mylist[1:], key), max(value))
-    pass
+
 
 ## Feel free to add your own tests here.
 def test_longest_run():
