@@ -161,7 +161,8 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
 
   - 3b. What is the Work and Span of this implementation?  
 
-.  
+.  As it is not pareilzable span = Work 
+the runt time would be O(n^2)
 .  
 .  
 .  
@@ -176,7 +177,8 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
 
   - 3d. What is the Work and Span of this sequential algorithm?  
 .  
-.  
+.  as we are not perelizing it the Span = Work
+O(log(n))
 .  
 .  
 .  
@@ -192,7 +194,8 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
 
 .  
 .  
-.  
+.  work is O(log(n))
+span is 2w(n/2)+ O(n)
 .  
 .  
 .  
