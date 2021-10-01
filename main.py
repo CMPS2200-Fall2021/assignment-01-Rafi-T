@@ -14,11 +14,11 @@ def longest_run(mylist, key):
     n = 0 
     v = []
     for x in range(len(mylist)):
-        if mylist[x-1] == key:
+        if mylist[x] == key:
             n +=1
-        else:
-            v.append (n)
-            n = 0 
+        else: 
+            n = 0
+        v.append (n)
     return max(v)
 
 
