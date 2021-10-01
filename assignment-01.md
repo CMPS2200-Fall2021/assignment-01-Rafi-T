@@ -12,20 +12,21 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 1. **Asymptotic notation**
 
   - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
-
-.  2^{n+1} <= (2^n)
+```
+  2^{n+1} <= (2^n)
   make c = 2 and n= anything
   2^{n+1} <= 2(2^n) 
   == 2^{n+1} <= (2^{n+1})
   therefore yes as they are the same if n = 1 then 
-.  2^{1+1} <= (2^{1+1})
+  2^{1+1} <= (2^{1+1})
 4 = 4 
+```
 .  
 .  
 . 
   - 1b. Is $2^{2^n} \in O(2^n)$? Why or why not?     
 .  $2^{2^n} <= O(2^n)$
- .  
+```  
 $2^{2^n} <= (2^n)
 let c be 2 and n be 1
 $2^{2^n} <= 2(2^n)
@@ -34,12 +35,13 @@ $2^{2^n} <= 2(2^n)
  = $2^{2} <= (2^{2})
  4 <= 4
  so yes 
+ ```
 .  
 .  
 .  
   - 1c. Is $n^{1.01} \in O(\mathrm{log}^2 n)$?    
 .  
-.  
+``` 
 $n^{1.01} <= O(\mathrm{log}^2 n
 .  let n be 14.467 and c be 1 
 14.467 ^1.01 <= 1 x {log}^2 (14.467) 
@@ -55,28 +57,29 @@ let n be 4.136 and c be 1
 4.195 <= 4.195
 
 So there exist an n and a c where n^1.01 will always be larger but there exist an n and c where  {log}^2(n) will be larger for a time. 
-
+```
 .  
 
   - 1d. Is $n^{1.01} \in \Omega(\mathrm{log}^2 n)$?  
   $n^{1.01} >= \Omega(\mathrm{log}^2 n)
-.  
+  
+ ```  
 let n be 4.136 and c be 1
 
 4.136  ^1.01 >= 1 x {log}^2 (4.136) 
 4.195 >= {log}(4.136) x {log}^(4.136)
 4.195 >= 2.0482 x 2.0482
 4.195 >= 4.195
-.  
+```
 
 .  
 .  
   - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$?  
-.  
+ ```  
 .  let c be 1 and n be 2.205
 $\sqrt{2.205} >= (\mathrm{log}3 x 2.205)^3)
 1.485 >= 1.1407786558^3
-
+```
 .  
 .  
   - 1f. Is $\sqrt{n} \in \Omega((\mathrm{log} n)^3)$?  
@@ -100,7 +103,7 @@ therefore
 .  prove that a number can not be bigger and smaller than a number 
 prove x < y and x > y can not be true 
 this would mean x < y > x meaning x 
-.  
+.  use notation 
 .  
 .  
 .  
@@ -162,7 +165,7 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
   - 3b. What is the Work and Span of this implementation?  
 
 .  As it is not pareilzable span = Work 
-the runt time would be O(n^2)
+the runt time would be O(n)
 .  
 .  
 .  
