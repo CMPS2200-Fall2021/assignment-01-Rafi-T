@@ -213,6 +213,8 @@ O(log n)
 .  
 .  work is O(log(n))
 span is 2w(n/2)+ O(n)
+
+There are 2 branches for each node and each brand has half the amount of input. Therfore this is a Root dominated algorithm. 
 .  
 .  
 .  
