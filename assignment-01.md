@@ -78,14 +78,17 @@ let n be 4.136 and c be 1
  ```  
 .  let c be 1 and n be 2.205
 $\sqrt{2.205} >= (\mathrm{log}3 x 2.205)^3)
-1.485 >= 1.1407786558^3
+1.485 >= 1.485
 ```
 .  
 .  
   - 1f. Is $\sqrt{n} \in \Omega((\mathrm{log} n)^3)$?  
-.  
-.  
-.  
+  
+```
+let c be 1 and n be 2 
+$\sqrt{2} = 2 <= 1 x (log(2))^3 = 1 
+
+```
 .  
 
   - 1g. Consider the definition of "Little o" notation:
