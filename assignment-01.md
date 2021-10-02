@@ -139,7 +139,7 @@ $$
   - 2b. What does this function do, in your own words?  
 
 
-.  fibanocio
+.  it is a fibanocio caculator 
 
 .  
 .  
