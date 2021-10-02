@@ -119,7 +119,7 @@ this would mean x < y > x meaning x
 2. **SPARC to Python**
 
 Consider the following SPARC code:  
-$$
+```$$
 \begin{array}{l}
 \mathit{foo}~x =   \\
 ~~~~\texttt{if}{}~~x \le 1~~\texttt{then}{}\\
@@ -130,14 +130,14 @@ $$
 ~~~~~~~~\texttt{end}{}.\\
 \end{array}
 $$ 
-
+```
   - 2a. Translate this to Python code -- fill in the `def foo` method in `main.py`  
 
   - 2b. What does this function do, in your own words?  
 
-.  
+
 .  fibanocio
-.  
+
 .  
 .  
 .  
