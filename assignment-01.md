@@ -106,7 +106,18 @@ therefore
 .  prove that a number can not be bigger and smaller than a number 
 prove x < y and x > y can not be true 
 this would mean x < y > x meaning x 
-.  use notation 
+.  
+
+```
+o(g(n)) means that as a funtion f(n) increase so does g(n) by a bigger factor so as n aproches infinity f(n) become smaller and smaller in comparison meaning 
+f(n)/g(n) as n aproches infinity the equation approches 0.
+
+omega(g(n)) means that as a funtion f(n) increase so does g(n) by a smaller factor so as n aproches infinity f(n) become larger and larger in comparison meaning 
+f(n)/g(n) as n aproches infinity so does this equation. 
+
+As no funtion can both be my magnitudes greater than g(n) and simultaneously smaller far smaller than g(n), the set of empty. 
+
+```
 .  
 .  
 .  
