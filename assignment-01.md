@@ -195,7 +195,7 @@ the runt time would be O(n)
   - 3d. What is the Work and Span of this sequential algorithm?  
 .  
 .  as we are not parallelizing it the Span = Work
-O(nlog n)
+O(log n)
 .  
 .  
 .  
