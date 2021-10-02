@@ -34,12 +34,10 @@ class Result:
         return('longest_size=%d left_size=%d right_size=%d is_entire_range=%s' %
               (self.longest_size, self.left_size, self.right_size, self.is_entire_range))
     
-num = 0 
-value = []
-def longest_run_recursive(mylist, key):
+def lrr(mylist, key):
     if len(mylist) > 1:
-        left = longest_run_recursive(mylist[:len(mylist)//2], key)
-        right = longest_run_recursive(mylist[len(mylist)//2:], key)
+        left = lrr(mylist[:len(mylist)//2], key)
+        right = lrr(mylist[len(mylist)//2:], key)
     if len(mylist) == 1:
         if mylist == [key]:
             return Result(1,1,1,1)
@@ -56,8 +54,23 @@ def longest_run_recursive(mylist, key):
     elif left.right_size == 0 or right.left_size == 0:
         x.longest_size = max(left.longest_size,right.longest_size)
     return (x) 
-    
 
+    
+ 
+
+def longest_run_recursive(mylist, key):
+    return lrr(mylist,key).longest_size
+"""
+def test_longest_run_recursive():
+    assert longest_run_recursive([2,12,12,8,12,12,12,0,12,1], 12) == 3
+    assert longest_run_recursive([12,12,12,8,12,12,12,0,12,1], 12) == 3  
+    assert longest_run_recursive([12,12,12,8,12,12,12,0,12,1], 1) == 1
+    assert longest_run_recursive([2,12,12,8,12,13,12,0,12,1], 12) == 2
+    assert longest_run_recursive([7,7,7], 12) == 0
+    assert longest_run_recursive([7,7,7], 7) == 3
+    assert longest_run_recursive([2,12,12,8,12,12,12,0,12,1,12,12,12,12,12], 12) == 5
+    print ("good")
+"""
 ## Feel free to add your own tests here.
 def test_longest_run():
     assert longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3
