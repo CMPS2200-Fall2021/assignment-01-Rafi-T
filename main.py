@@ -51,6 +51,10 @@ def lrr(mylist, key):
         return x
     if left.right_size >= 1 and right.left_size >= 1:
             x.longest_size = max(left.longest_size,right.longest_size,left.right_size + right.left_size)
+            if right.is_entire_range == 1:
+                x.right_size= right.right_size + left.right_size
+            elif left.is_entire_range == 1:
+                x.left_size= left.left_size + right.left_size          
     elif left.right_size == 0 or right.left_size == 0:
         x.longest_size = max(left.longest_size,right.longest_size)
     return (x) 
