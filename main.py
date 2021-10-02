@@ -56,6 +56,7 @@ def longest_run_recursive(mylist, key):
     elif left.right_size == 0 or right.left_size == 0:
         x.longest_size = max(left.longest_size,right.longest_size)
     return (x) 
+    
 
 ## Feel free to add your own tests here.
 def test_longest_run():
